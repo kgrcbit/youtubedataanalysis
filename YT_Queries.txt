@@ -7,11 +7,8 @@ create database youtubeProject;
 2) Create Table with specified fields
 
 
-create table youtubetab
-(videoid varchar(11), name string, interval int, category string,
- length int, views int, rating float, numrating int, comments int, relatedid varchar(11) )
-row format delimited fields terminated by "\t"
-lines terminated by "\n"
+create table youtubetab (videoid varchar(11), name string, duration int, category string,
+length int, views int, rating float, numrating int, comments int, relatedid varchar(11) ) row format delimited fields terminated by "\t";
 
 ---------------------------------------------------------------------------------------
 

@@ -19,8 +19,9 @@ load data local inpath "youtubedata.txt" into table youtubetab
 
 -----------------------------------------------------------------------------------------------------------------
 
-Problem Statement A
-
+Problem Statement A(Find out the top 5 categories with maximum number of
+videos uploaded.)
+----------------------------------------------------------------------------
 select category, count(*) A
 from youtubetab
 group by category
@@ -29,6 +30,9 @@ order by A desc limit 5
 ----------------------------------------------------------------------------------------------------------------
 
 Problem Statement B
+--------------------------------------------------
+Find out the top 10 rated videos.
+---------------------------------------------------
 
 select videoid, rating
 from youtubetab
@@ -37,6 +41,9 @@ order by rating desc limit 10
 ------------------------------------------------------------------------------------------------------------------
 
 Problem Statement C
+-----------------
+Find out the most viewed videos.
+---------------------
 
 select videoid, views
 from youtubetab
